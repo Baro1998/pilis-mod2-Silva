@@ -3,6 +3,8 @@ import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&fami
 /* Reset */
 *{
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html, body {
@@ -55,8 +57,13 @@ a{
 /* Showcase */
 
 .showcase-img {
-  float: right;
-  width: 45%;
+  /* float: right;
+  width: 45%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  height: 100vh;
    
 }
 
@@ -142,7 +149,7 @@ height: 100vh;
 }
 
 .about-img {
-  float: left;
+  float: right;
   width: 50%;
 }
 
@@ -234,5 +241,21 @@ form .form-control {
   border: 1px solid #ccc9aa;
   color: #ccc9aa;
 
+  
+}
+
+/* ---clima--- */
+#clima {
+  padding: 50px 0;
+  background:  #fafdea ;
+  color:   #260729;
+  height: 50vh;
+}
+
+.clima1{
+  height: 25vh;
+  width: 50%;
+
+  
   
 }
