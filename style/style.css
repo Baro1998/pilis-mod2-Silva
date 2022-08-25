@@ -3,6 +3,8 @@ import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&fami
 /* Reset */
 *{
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html, body {
@@ -13,12 +15,13 @@ scroll-behavior: smooth;
 }
 a{
   text-decoration: none;
+  color: #797446;
 }
 .imagen_circular
 {
   width:100px;
  height:100px;
-  float: right; 
+ float: right; 
  margin: 10px;
  border-radius:50%;
  -webkit-border-radius:50%;
@@ -26,7 +29,6 @@ a{
  -webkit-box-shadow: 0px 0px 7px 7px #ccc9aa  ;
   }
 
- 
 /*navbar*/
 #navbar a {
   color:#2a2344;
@@ -55,14 +57,17 @@ a{
 /* Showcase */
 
 .showcase-img {
-  float: right;
-  width: 45%;
-   
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  height: 100vh;
 }
 
 .showcase-img img {
-  width: 90%;
-}
+  width: 100%;
+} 
 
 .showcase-text {
   float: left;
@@ -99,11 +104,6 @@ a{
   height: 100vh;
 }
 
-.about-text .title-two {
-  color: #403d39;
-  font-size: 20px;
-  float: rigth;
-}
 
 /* parte3 */
 header{
@@ -124,11 +124,24 @@ header{
 color: #fafdea ;
 height: 100vh;
 }
-
+.about-text h1 {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 46px;
+}
 .about-title {
   float: left;
   width: 45%;
   padding-top: 340px;
+}
+.about-text .title-one {
+  font-size: 29px;
+  font-weight: 300;
+}
+.about-text .title-two {
+  color:#fafdea;
+  font-size: 20px;
+  float: rigth;
 }
 
 .about-description {
@@ -140,14 +153,17 @@ height: 100vh;
   padding-bottom: 10px;
   font-size: 1.25rem;
 }
-
 .about-img {
-  float: left;
-  width: 50%;
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  height: 100vh;
+    
 }
-
-.about-img img {
-  width: 60%;
+.about-img {
+  float: right;
+    
 }
 .about-text {
   float: rigth;
@@ -166,6 +182,8 @@ h3 {
   font-weight: 300;
    text-transform: uppercase;
    color: #FFF;
+   text-decoration: none;
+   padding-top: 60px;
 }
 
 p {
@@ -176,7 +194,7 @@ line-height: 1.7em;
 
 /* Contact */
 #contact {
-  padding: 50px 0;
+  padding: 70px 0;
   background:  #260729;
   color:   #fafdea ;
   height: 100vh;
@@ -185,31 +203,48 @@ line-height: 1.7em;
 .contact-form {
   float: right;
   width: 45%;
-  padding: 20px;
+  padding: 30px;
 }
 
 .contact-title {
  
-  width: 55%;
-  padding-top: 150px;
-  text-align: left;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 23px;
+   width: 45%;
+  padding-top: 20px;
+  text-align: left; 
   text-decoration-color:  #fafdea;
 }
-
+ h1 {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 30px;
+}
+/*
+.about-text .title-one {
+  font-size: 29px;
+  font-weight: 300;
+} */
 form .form-group {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 form .form-control {
   /* display: block; */
-  width: 100%;
+  width: 97%;
   padding: 0.375rem 0.7rem;
   font-size: 1rem;
   line-height: 1.7;
   border: none; 
 
 }
-
+form .label-text 
+{
+      font-size: 20px;
+    font-weight: 300;
+    
+}
 /* Boton Form */
 .btn {
   display: inline-block;
@@ -223,9 +258,9 @@ form .form-control {
 }
 
 .btn-light {
-  background: #260729;
+  background:#fff;
   border: 1px solid #260729;
-  color: #fff;
+  color: #260729;
   width: 100%;
 }
 
@@ -235,4 +270,18 @@ form .form-control {
   color: #ccc9aa;
 
   
+}
+
+/* ---clima--- */
+#clima {
+  padding: 50px 0;
+  background:  #fafdea ;
+  color:   #260729;
+  height: 50vh;
+}
+
+.clima1{
+  height: 25vh;
+  width: 50%;
+
 }
