@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Expo Vinícola</title>
+  <title>Expo Vitivinícola</title>
   <link rel="stylesheet" href="./style/style.css">
   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
   
  
- <!-- parte 1 -->
+ <!-- Sección Inicio -->
  <header id="mainheader">
   <nav id="navbar">
     <div class="container">
@@ -21,7 +21,7 @@
            
       <ul>
         <li><a href="#about">Nosotros</a></li>
-        <li><a href="#expo">Expo Vinícola</a></li>
+        <li><a href="#expo">Expo Vitivinícola</a></li>
         <li><a href="#contact">Registrate</a></li>
       </ul>
     </div>
@@ -29,14 +29,14 @@
 
 </header>
   
-  <!-- parte 2 -->
+  <!-- Sección Home -->
       
   <section id="home">
       <div id="showcase">
         <div class="container">
           <div class="showcase-text">
             <h1>
-              <span class="title-one">Expo Vinícola</span><br />
+              <span class="title-one">Expo Vitivinícola</span><br />
               <span class="title-two">Juntos potenciamos el comercio Jujeño</span><br />
               </h1>
             
@@ -52,45 +52,57 @@
       </div>
     </section>
 
-<!-- parte 3 -->
+<!-- Sección Nosotros -->
 
 
 <section id="about">
   <div id="about">
     <div class="container">
+      <div class="about-img">
+        <img src="https://static.wixstatic.com/media/714ca1_4ebb29f940d145d1829fb7cce1ed47bd.png/v1/fill/w_626,h_386,al_c,lg_1,q_85,enc_auto/714ca1_4ebb29f940d145d1829fb7cce1ed47bd.png" alt="">
+      </div>
       <div class="about-text">
         <h1>    
-          <span class="title-two">Ministerio de la Producción</span><br/></h1>
-          <p id="about-text-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quam, esse quia necessitatibus corrupti eveniet hic culpa, distinctio pariatur vero cupiditate possimus non maiores quae facilis ipsam deserunt. Eius, dolorum.</p>
-          
-        
+          <span class="title-one">Ministerio de Desarrollo Económico y Producción de Jujuy</span><br/></h1>
+          <p id="about-text-p">Es competencia del Ministerio de la producción fortalecer las economías regionales 
+            de la provicia de Jujuy y asistir al Gobernador y autoridades en todo lo inherente a la política económica, 
+            presupuestaria e impositiva, a la administración de las finanzas públicas, 
+            a las relaciones económicas, financieras y fiscales de Provincia.</p><br>
+                 <p>
+                  Exequiel Lello Ivacevich</p>
+                 <p> Ministro de Desarrollo Económico y Producción
+                  de la Provincia de Jujuy
+                 </p>
+                
+                 <h3><a href="#mainheader">Volver al Inicio</a></h3>
+
                         
       </div>
-      <div class="about-img">
-        <img src="./images/imagen3.jpg" alt="about-img">
-        
-      </div>
+      
       
     </div>
     
   </div>
    
-  
   </section>
-
-
-
 
 <section id="expo">
   <div id="showcase">
     <div class="container">
       <div class="showcase-text">
         <h1>
-          <span class="title-one">Expo Vinícola</span><br />
+          <span class="title-one">Expo Vitivinícola</span><br />
           <span class="title-two">Juntos potenciamos el comercio Jujeño</span><br />
           </h1>
         
-                        
+
+          <p>Con el objetivo de fortalecer el sector vitivinícola de la provincia y el posicionamiento 
+            de vinos jujeños en el mercado internacional,
+             el ministerio de Desarrollo Económico y Producción 
+             promueve la 1ra Edición de la "Exposición Vitivinícola Provincial".</p>
+             <p>Que se llevará a cabo los días 23, 24 y 25 de septiembre de 2022, en instalaciones de Ciudad Cultural, de la capital jujeña. </p>
+          
+             <h3><a href="#mainheader">Volver al Inicio</a></h3>
       </div>
       <div class="showcase-img">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/N09zv4rXev0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -102,10 +114,9 @@
   </div>
 </div>
 
-
-
 </section>
-<!-- parte 4 -->
+
+<!-- Formulario de Inscripción -->
 
 
 <section id="contact">
@@ -114,6 +125,7 @@
     <div class="contact-form">
       <form id="formulario">
         <div class="form-group">
+
           <label for="comercio">Comercio</label>
           <input id="comercio" class="form-control" type="text">
         </div>
@@ -123,6 +135,17 @@
         </div>
         <div class="form-group">
           <label for="celular">Celular</label>
+
+          <label class="label-text " for="comercio">Comercio</label>
+          <input id="comercio" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label class="label-text" for="titular">Titular</label>
+          <input id="titular" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label class="label-text" for="celular">Celular</label>
+
           <input id="celular" class="form-control" type="number">
         </div>
         <button id="enviar" class="btn btn-light">Enviar</button>
@@ -131,9 +154,20 @@
 
     <div class="contact-title">
 
-      <h3>Sumate al evento para potenciar el comercio local.</h3>
-          <h3>Luego te contactaremos.</h3>
-      
+      <h1>
+        <span>Sumate al evento para potenciar el comercio local.</span>
+        </h1>
+        <h1>
+        <span>Luego te contactaremos.</span>  
+        </h1>
+         
+          <br>
+          <br>
+          <br>
+          <br>
+           <h3><a href="#mainheader">Volver al Inicio</a></h3>
+
+
     </div>
 
   </div>
@@ -142,6 +176,7 @@
 <!-- ----5-- -->
 
 <section id="clima">
+<<<<<<< HEAD
   <div id="caja1">
     <h1 id="temperatura-valor"></h1>
     <h1 id="temperatura-descripcion"></h1>
@@ -150,10 +185,20 @@
     <h2 id="ubicacion"></h2>
     <img src="icono-animado" src="" alt="" height="128" width="128">
   </div>
+=======
+  <div class="clima1">Clima</div>
+>>>>>>> 1efbded85bb0c8112fab386155c374ab6c18204f
 
 </section>
 
 <script src="./main.js"></script>
 
+<<<<<<< HEAD
+=======
+<section id="footer">
+  <a href="https://wa.me/3884130325" target="_blank"><img class="imagen_circular" src="./images/whatsapp.jpg"> </a>
+
+</section>
+>>>>>>> 1efbded85bb0c8112fab386155c374ab6c18204f
 </body>
 </html>
