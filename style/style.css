@@ -272,3 +272,37 @@ form .form-control {
   
   
 }
+
+/* footer */
+
+#footer {
+  margin-top: 2em;
+  background-color: #260729;
+  color: #fafdea;
+}
+.sociales-container{
+  display: flex;
+  top: 20px;
+  justify-content: center; 
+}
+.sociales-img {
+  padding-top: 10px;
+ 
+  text-decoration: none;
+  margin-right: 30px;
+  }
+.sociales-tex{
+  
+  text-align: center;
+  padding-top: 20;
+  /*font-size: 1rem; */
+
+}
+.sociales-p{
+  font-size: 11px;
+  font-weight: 600;
+   text-transform: uppercase;
+   color: #FFF;
+   text-decoration: none;
+   padding-top: 60px;
+}
