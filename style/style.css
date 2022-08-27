@@ -19,22 +19,24 @@ a{
 }
 .imagen_circular
 {
-  width:100px;
- height:100px;
+ width: 90px;
+ height: 90px;
  float: right; 
  margin: 10px;
- border-radius:50%;
+ border-radius:30%;
  -webkit-border-radius:50%;
  box-shadow: 0px 0px 7px 7px #ccc9aa;
  -webkit-box-shadow: 0px 0px 7px 7px #ccc9aa  ;
+ position: fixed;
   }
 
+ 
 /*navbar*/
-#navbar{
-  position: fixed;
-  width: 100%;
-  background-color: var(--primary-color-dark);
-  z-index: 1;
+.logo{
+   float: right;
+   width: 120px;
+   
+  
 }
 
 #navbar a {
@@ -80,8 +82,6 @@ a{
   float: left;
   width: 50%;
   padding: 20px 20px 20px 40px;
-  display: flex;
-  
 }
 
 .showcase-text h1 {
@@ -114,8 +114,6 @@ a{
   height: 100vh;
 }
 
-
-
 /* parte3 */
 header{
   height: 20vh;
@@ -127,6 +125,7 @@ header{
   max-width: 1300px;
   overflow: auto;
   padding: 0 10px;
+  
 }
 
 /* About */
@@ -204,7 +203,7 @@ margin: 10px 0;
 line-height: 1.7em;
 }
 
-/* Contact */
+/* Contacto */
 #contact {
   padding: 70px 0;
   background:  #260729;
@@ -215,16 +214,15 @@ line-height: 1.7em;
 .contact-form {
   float: right;
   width: 45%;
-  padding: 30px;
+  padding: 70px;
 }
 
 .contact-title {
  
-  text-transform: uppercase;
   font-weight: 300;
-  font-size: 23px;
+  font-size: 20px;
    width: 45%;
-  padding-top: 20px;
+  padding-top: 30px;
   text-align: left; 
   text-decoration-color:  #fafdea;
 }
@@ -233,17 +231,11 @@ line-height: 1.7em;
   font-weight: 500;
   font-size: 30px;
 }
-/*
-.about-text .title-one {
-  font-size: 29px;
-  font-weight: 300;
-} */
 form .form-group {
   margin-bottom: 2rem;
 }
 
 form .form-control {
-  /* display: block; */
   width: 97%;
   padding: 0.375rem 0.7rem;
   font-size: 1rem;
@@ -253,11 +245,11 @@ form .form-control {
 }
 form .label-text 
 {
-      font-size: 20px;
+    font-size: 18px;
     font-weight: 300;
     
 }
-/* Boton Form */
+/* Boton del formulario*/
 .btn {
   display: inline-block;
   font-size: 15px;
@@ -280,25 +272,35 @@ form .label-text
   background: #fff;
   border: 1px solid #ccc9aa;
   color: #ccc9aa;
-
-  
 }
 
-/* ---clima--- */
-#clima {
-  padding: 50px 0;
-  background:  #fafdea ;
-  color:   #260729;
-  height: 50vh;
+/* para la Sección del clima */
+
+#weather {
+  padding: 6rem;
+  text-align: center;
+  border-bottom: 1px solid #ccc9aa;
 }
 
-.clima1{
-  height: 25vh;
-  width: 50%;
+#weather figcaption {
+  margin-top: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #260729;
+  font-weight: bold;
+}
 
-<<<<<<< HEAD
-  
-  
+#weather .city-temp {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 5px;
+  color: #260729;
+}
+
+#weather .city-icon {
+  margin-top: 2px;
+  width: 100px;
+  height: 100px;
 }
 
 /* footer */
@@ -323,7 +325,7 @@ form .label-text
   
   text-align: center;
   padding-top: 20;
-  /*font-size: 1rem; */
+  
 
 }
 .sociales-p{
@@ -333,6 +335,16 @@ form .label-text
    color: #FFF;
    text-decoration: none;
    padding-top: 60px;
-=======
->>>>>>> a2596ad10d98f24f8dffdadb1de0854c09262bc1
+
 }
+.imagen_whatsapp
+{
+ width:80px;
+ height:80px;
+ float: right; 
+ margin: 10px;
+ border-radius:50%;
+ -webkit-border-radius:50%;
+ box-shadow: 0px 0px 7px 7px #ccc9aa;
+ -webkit-box-shadow: 0px 0px 7px 7px #ccc9aa  ;
+  }

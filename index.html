@@ -7,26 +7,30 @@
   <title>Expo Vitivinícola</title>
   <link rel="stylesheet" href="./style/style.css">
   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <link rel="shortcut icon" href="./images/icono.jpg" type="image/x-icon" />
 </head>
 <body>
   
  
  <!-- Sección Inicio -->
  <header id="mainheader">
+  <div class="logo"><a href="#mainheader"><img class="imagen_circular" src="./images/logo.jpg"> </a></div>
+  
   <nav id="navbar">
+   
     <div class="container">
       
-      <a href="#home"><img class="imagen_circular" src="./images/logo.jpg"> </a>
-        
+           
            
       <ul>
         <li><a href="#about">Nosotros</a></li>
         <li><a href="#expo">Expo Vitivinícola</a></li>
         <li><a href="#contact">Registrate</a></li>
+        <li><a href="#weather">Clima</a></li>
       </ul>
     </div>
   </nav>
-
+  
 </header>
   
   <!-- Sección Home -->
@@ -74,7 +78,7 @@
                   de la Provincia de Jujuy
                  </p>
                 
-                 <h3><a href="#mainheader">Volver al Inicio</a></h3>
+                
 
                         
       </div>
@@ -94,15 +98,13 @@
           <span class="title-one">Expo Vitivinícola</span><br />
           <span class="title-two">Juntos potenciamos el comercio Jujeño</span><br />
           </h1>
-        
-
           <p>Con el objetivo de fortalecer el sector vitivinícola de la provincia y el posicionamiento 
             de vinos jujeños en el mercado internacional,
              el ministerio de Desarrollo Económico y Producción 
              promueve la 1ra Edición de la "Exposición Vitivinícola Provincial".</p>
              <p>Que se llevará a cabo los días 23, 24 y 25 de septiembre de 2022, en instalaciones de Ciudad Cultural, de la capital jujeña. </p>
           
-             <h3><a href="#mainheader">Volver al Inicio</a></h3>
+             <!-- <h3><a href="#mainheader">Volver al Inicio</a></h3> -->
       </div>
       <div class="showcase-img">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/N09zv4rXev0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -126,15 +128,15 @@
       <form id="formulario">
         <div class="form-group">
 
-          <label for="comercio">Comercio</label>
+          <label class="label-text" for="comercio">Comercio</label>
           <input id="comercio" class="form-control" type="text">
         </div>
         <div class="form-group">
-          <label for="titular">Titular</label>
+          <label class="label-text" for="titular">Titular</label>
           <input id="titular" class="form-control" type="text">
         </div>
         <div class="form-group">
-          <label for="celular">Celular</label>
+          <label class="label-text" for="celular">Celular</label>
           <input id="celular" class="form-control" type="number">
         </div>
         <button id="enviar" class="btn btn-light">Enviar</button>
@@ -144,48 +146,32 @@
     <div class="contact-title">
 
       <h1>
-        <span>Sumate al evento para potenciar el comercio local.</span>
+        <span>Registrate</span>
         </h1>
-        <h1>
+        <p>Sumate al evento para potenciar el comercio local.</p>
+        <p>
         <span>Luego te contactaremos.</span>  
-        </h1>
+        </p>
          
-          <br>
-          <br>
-          <br>
-          <br>
-           <h3><a href="#mainheader">Volver al Inicio</a></h3>
-
+          
 
     </div>
 
   </div>
 </section>
 
-<!-- ----5-- -->
+<!--Sección clima en la ciudad del evento-->
 
-<section id="clima">
-
-  <div id="caja1">
-    <h1 id="temperatura-valor"></h1>
-    <h1 id="temperatura-descripcion"></h1>
-  </div>
-  <div id="caja2">
-    <h2 id="ubicacion"></h2>
-    <img src="icono-animado" src="" alt="" height="128" width="128">
-  </div>
-
-  <div class="clima1">Clima</div>
-
-
+<section id="weather">
+  <h1>Así esta el clima en Ciudad Cultural</h1>
+  <div class="cities"></div>
 </section>
 
-<script src="./main.js"></script>
 
 
-<!--Sección footer-->>
+<!--Sección footer-->
 <section id="footer">
-  <a href="https://wa.me/3884130325" target="_blank"><img class="imagen_circular" src="./images/whatsapp.jpg"> </a>
+  <a href="https://wa.me/3884130325" target="_blank"><img class="imagen_whatsapp" src="./images/whatsapp.jpg"> </a>
   <div class="sociales-container">
     
 
@@ -201,11 +187,6 @@
   </div>
   
 </section>
-
-<section id="footer">
-  <a href="https://wa.me/3884130325" target="_blank"><img class="imagen_circular" src="./images/whatsapp.jpg"> </a>
-
-</section>
-
+<script src="./main.js"></script>
 </body>
 </html>

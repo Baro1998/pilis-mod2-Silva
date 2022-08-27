@@ -1,3 +1,8 @@
+/*--Api para el clima--*/
+const URL_API = "https://api.openweathermap.org/data/2.5/weather?";
+const API_KEY = "58fcdbab9c859a3592bcb84e1cc11eec";
+const LATITUDE = -24.18;
+const LONGITUDE = -65.33;
 
 /* --------formulario--------------- */
 function onClick (event) {
@@ -25,7 +30,7 @@ function onClick (event) {
           console.log(json);
           Swal.fire(
               'Enviado',
-              'Gracias por tu comentario',
+              'Gracias por registrar tu comercio.',
               'success'
           );
           cleanForm();
@@ -48,26 +53,40 @@ let boton = document.getElementById("enviar");
 boton.addEventListener("click", onClick);
 
 
+/* ------Clima--------- */
 
-
-/* ------clims--------- */
-window.addEventListener('load', ()=>{
-    let lon;
-    let lat;
-
-    if(navigator.geolocation){
-      navigator.geolocation.getCurrentPosition( posicion => {
-          lon = posicion.coords.longitude;
-          lat = posicion.coords.latitude;
-
-          const url ='https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=cb619c04eaa1027aecd85b28a6da2891';
-
-          console.log(url);
-    })  
-  }
-
-})
-
+const params = new URLSearchParams({
+    lat: LATITUDE,
+    lon: LONGITUDE,
+    appid: API_KEY,
+    lang: "sp",
+    units: "metric",
+  });
+  
+  const list = document.querySelector(".cities");
+  fetch(URL_API + params)
+    .then((response) => response.json())
+    .then((data) => {
+      const { main, name, sys, weather } = data;
+      const icon = `https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/${weather[0]["icon"]}.svg`;
+      const temp = main.temp.toFixed(1);
+      const div = document.createElement("div");
+  
+      console.log(data);
+      div.classList.add("border");
+      const markup = `
+      <p class="city-name" data-name="${name},${sys.country}">
+        <span>${name}</span>
+       
+      </p>
+      <div class="city-temp">${temp}°C</div>
+      <figure>
+        <img class="city-icon" src=${icon} alt="${weather[0]["description"]}">
+        <figcaption>${weather[0]["description"]}</figcaption>
+      </figure>`;
+      div.innerHTML = markup;
+      list.appendChild(div);
+    });
 
 
 
